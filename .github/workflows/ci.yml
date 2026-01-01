@@ -36,6 +36,8 @@ jobs:
 
       - name: Build project
         run: npm run build
+        env:
+          VITE_USE_HASH_ROUTER: 'true'
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
